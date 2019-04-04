@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+faker = "*"
+
+[packages]
+kafka-python = "*"
+redis = "*"
+redis-opentracing = "==0.1.2"
+jaeger-client = "*"
+
+[requires]
+python_version = "3.6"

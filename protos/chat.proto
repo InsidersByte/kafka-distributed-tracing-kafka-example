@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+service Chat {
+  rpc ListMessages (ListMessagesRequest) returns (ListMessagesResponse) {}
+  rpc CreateMessage (CreateMessageRequest) returns (Message) {}
+}
+
+message ListMessagesRequest {}
+
+message ListMessagesResponse {
+  repeated Message messages = 1;
+}
+
+message CreateMessageRequest {
+  string message = 1;
+}
+
+message Message {
+  string id = 1;
+  string message = 2;
+}

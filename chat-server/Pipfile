@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+grpcio-tools = "==1.17.1"
+grpcio = "==1.17.1"
+grpcio-opentracing = "*"
+redis = "*"
+redis-opentracing = "==0.1.2"
+jaeger-client = "*"
+kafka-python = "*"
+
+[requires]
+python_version = "3.6"
